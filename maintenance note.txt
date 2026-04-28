@@ -1,0 +1,28 @@
+# Project Status & Maintenance Note
+**Project:** Dammika Clothing Website
+**Current Status:** In Progress
+**Priority:** Medium
+**Target Deadline:** Monday, April 20, 2026
+
+---
+
+## 📝 Project Overview
+This project is focused on designing and developing a complete frontend experience for the Dammika Clothing website. The goal is to build a modern, responsive, and visually appealing e-commerce interface based on custom Figma designs.
+
+## 🚀 Tasks & Milestones
+- [x] **UI/UX Design Phase:** Create high-fidelity Figma designs for all core pages, including Home, About, Contact, Login, and Sign Up.
+- [x] **Frontend Development:** Translate the Figma designs into clean, responsive, and interactive code using HTML, CSS, and JavaScript.
+- [x] **Version Control:** Set up a GitHub repository to track progress and manage code versions efficiently.
+- [ ] **Finalizing Documentation:** Write clear implementation notes outlining the structure and behavior of the application.
+- [ ] **Final Submission:** Package the source code, design assets, and implementation notes into a final ZIP file for the project handover (Due by 5:00 PM on deadline day).
+
+## 🛠️ Technology Stack
+- **Design:** Figma
+- **Frontend Codebase:** HTML, CSS, Vanilla JavaScript
+- **Version Control & Hosting:** Git, GitHub
+
+## 💡 Key Learnings & Objectives
+Throughout this project, we are actively focusing on adhering to modern UI/UX design principles and maintaining professional version control workflows to ensure a high-quality, maintainable final product.
+
+---
+*Note: Once all deliverables are ready, the final source code, implementation notes, and the GitHub repository link will be packaged and submitted.*

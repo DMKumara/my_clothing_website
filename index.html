@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madushan's Fashion House</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Madushan's <span>Fashion House</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Discover Your True Style</h2>
+            <p>Explore the latest trends in fashion and upgrade your wardrobe with Madushan's Fashion House.</p>
+            <a href="#categories" class="btn">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- number section -->
+    <section class="stats-section">
+        <div class="stat-box fade-in">
+            <i class="fas fa-users"></i>
+            <h3 class="counter" data-target="15000">0</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-box fade-in">
+            <i class="fas fa-tshirt"></i>
+            <h3 class="counter" data-target="1200">0</h3>
+            <p>Premium Products</p>
+        </div>
+        <div class="stat-box fade-in">
+            <i class="fas fa-store"></i>
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Global Stores</p>
+        </div>
+        <div class="stat-box fade-in">
+            <i class="fas fa-award"></i>
+            <h3 class="counter" data-target="25">0</h3>
+            <p>Awards Won</p>
+        </div>
+    </section>
+
+    <!-- categories -->
+    <section id="categories" class="categories-section">
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <p>Find what exactly you're looking for.</p>
+        </div>
+
+        <!-- search filtering -->
+        <div class="search-container fade-in">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="categorySearch" placeholder="Search categories (e.g. Men, Kids)...">
+            </div>
+        </div>
+        
+        <div class="category-grid">
+            <!-- card 1 -->
+            <div class="category-card fade-in">
+                <div class="card-image-wrapper">
+                    <img src="assets/images/mens.png" alt="Men's Wear">
+                </div>
+                <div class="card-content">
+                    <h3>Men's Wear</h3>
+                    <a href="#" class="shop-link">Shop Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="category-card fade-in">
+                <div class="card-image-wrapper">
+                    <img src="assets/images/womens.png" alt="Women's Wear">
+                </div>
+                <div class="card-content">
+                    <h3>Women's Wear</h3>
+                    <a href="#" class="shop-link">Shop Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="category-card fade-in">
+                <div class="card-image-wrapper">
+                    <img src="assets/images/kids.png" alt="Kids Fashion">
+                </div>
+                <div class="card-content">
+                    <h3>Kids Fashion</h3>
+                    <a href="#" class="shop-link">Shop Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="category-card fade-in">
+                <div class="card-image-wrapper">
+                    <img src="assets/images/ethnic.png" alt="Ethnic Wear">
+                </div>
+                <div class="card-content">
+                    <h3>Ethnic Wear</h3>
+                    <a href="#" class="shop-link">Shop Collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-content">
+            <h3>Madushan's Fashion House</h3>
+            <p>Premium quality clothing for everyone.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Madushan's Fashion House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

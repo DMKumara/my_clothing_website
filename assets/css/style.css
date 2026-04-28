@@ -1,0 +1,368 @@
+/* main css file for madushan's fashion house */
+/* created for assignment */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #222;
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff7a00;
+}
+
+.nav-icons a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-icons a:hover {
+    color: #ff7a00;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 237, 219, 0.8), rgba(255, 245, 245, 0.8)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #222;
+    animation: slideDown 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slideUp 1s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff7a00;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(255, 122, 0, 0.3);
+    animation: slideUp 1.2s ease-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 122, 0, 0.4);
+    background-color: #e66e00;
+}
+
+/* Stats / Number Counting Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 60px 5%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.stat-box i {
+    font-size: 40px;
+    color: #ff7a00;
+    margin-bottom: 15px;
+}
+
+.stat-box h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #777;
+    font-weight: 600;
+}
+
+/* Categories Section */
+.categories-section {
+    padding: 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 18px;
+}
+
+/* Search Filtering Part */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-wrapper i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.search-wrapper input:focus {
+    border-color: #ff7a00;
+    box-shadow: 0 5px 20px rgba(255, 122, 0, 0.15);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Category Card */
+.category-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.category-card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    transform: translateY(-10px);
+}
+
+.card-image-wrapper {
+    overflow: hidden;
+    height: 350px;
+    width: 100%;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Zoom out effect based on user requirement */
+    transform: scale(1.15);
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card:hover .card-image-wrapper img {
+    /* When hovered, zoom out to normal scale */
+    transform: scale(1);
+}
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.shop-link {
+    display: inline-block;
+    color: #ff7a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.shop-link i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.category-card:hover .shop-link i {
+    transform: translateX(5px);
+}
+
+/* Footer Section */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 60px 5% 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.footer-content p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ff7a00;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-content h2 {
+        font-size: 40px;
+    }
+}
